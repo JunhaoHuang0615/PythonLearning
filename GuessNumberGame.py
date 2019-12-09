@@ -1,9 +1,10 @@
+import random
 print("this is a number guess game")
 count = 0
+answer = random.randint(1,10)
 while count<3:
     temp = input("enter a number please ")
     number = int(temp)
-    answer = 8
     if number < answer:
         print("your number is too small")
     else:
@@ -21,6 +22,7 @@ print("game end")
 # 比如说是：/usr/local/bin/python3 或者 /Users/apple/Library/Python/3.8/bin
 # 查看环境变量的值：echo $PATH
 # 每一个PATH是靠分号隔开的
+# vi ~/.bash_profile
 # export PATH="/Users/apple/Library/Python/3.8/bin:${PATH}"
 # 修改立即生效：source ~/.bash_profile
 
