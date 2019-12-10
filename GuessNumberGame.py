@@ -13,7 +13,7 @@ while count<3:
         else:
             print("you got it")
             break
-    count = count+1
+    count += 1
 print("game end")
 # 先查看shell的类型： dscl . -read $HOME shell
 # Python 配置环境变量的方法
