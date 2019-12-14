@@ -1,0 +1,11 @@
+{
+    "Name":"Ken",
+    "Level":99,
+    "Age":18,
+    "SkillList": [
+        {"id" : 2, "name" : "Kick","damage" :123},
+        {"id" : 3, "name" : "shoot","damage" :89},
+        {"id" : 4, "name" : "cut","damage" :673}
+        ]
+    
+    }

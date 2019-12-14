@@ -19,4 +19,10 @@ print(tuple3)
 
 temp = (123,"123",88)
 temp = temp[:1] + (67,"78")+temp[1:] #由于不能直接对元祖改动，我们只能重新赋值啦，元祖是基本类型噢
-print(temp  )
+print(temp)
+
+#元组变量,变量可以通过组的形式，对应的来赋值
+(temp,temp2) = ['123',12]
+print(temp)
+print(temp2)
+print(type((temp,temp2)))
