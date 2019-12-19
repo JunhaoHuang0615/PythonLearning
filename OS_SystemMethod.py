@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import os
 #返回当前的工作目录
 print(os.getcwd())
