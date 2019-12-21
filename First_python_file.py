@@ -43,6 +43,17 @@ print(Multipleline)
 # export PATH="/Users/apple/Library/Python/3.8/bin:${PATH}"
 # 修改立即生效：source ~/.bash_profile
 
+#设置环境变量,也许需要：
+#~/ 到主目录
+#nano ~/.zshrc
+#写入
+#if [ -f ~/.bashrc ]; then
+#    source ~/.bashrc
+# fi
+#ctrl+x    保存退出
+#再按一次 return
+
+
 #方法2： 在VS Code 中按 F1
 # 输入 Python: Select Interpreter
 # 选择python的版本

@@ -1,0 +1,32 @@
+什么是cookie
+    cookie就是用户在某个网站登陆之后，用户名和密码会发送到服务器的后台，然后验证是否正确，如果正确，则会为当前浏览器设置一个cookie
+    在我们访问这个网站的其他页面的时候，浏览器就会携带这个cookie，服务器再接收这个cookie，看是哪一个用户。 这样就不用重新登录了
+http协议是没有cookie的，也就是无法记录用户的信息，也不清楚在这之前访问过什么，因此网站需要记录用户登录后，创建一些信息并且将这些信息记录在用户的浏览器中，内容就是cookie
+之后用户再使用这个浏览器的时候，就会自动携带这个用户信息
+    其实cookie相当于一个便签，这个便签贴在了用户上
+单有几个问题
+ 1:浏览器更换，或者把cookie删除了，信息丢失
+ 2.cookie在浏览器记录的信息是不安全的，因为不能记录敏感信息
+
+什么是session
+把用户信息记录在服务器端，数据库或者脚本中，并给每一个用户生成一个session的id，并且把sessionID设置在用户的浏览器中，设置成cookie
+这样用户的cookie只是记录了SessionID
+
+方法：
+先用浏览器登录一次账号：
+https://moodle.gla.ac.uk/course/view.php?id=16252 这个是登录后的主界面页面，这个也是最终的目标访问界面
+然后退出界面，回到登录界面，打开检查元素，看看登录的时候访问的是什么url
+https://moodle.gla.ac.uk/login/index.php 
+再去找他需要的Data： 在Data from一栏
+logintoken: YARmaCsKrRrFGnF2pXprjMh3wm1JsMCv
+username: 2414816h
+password: aa199595
+
+#siki xueyuan
+_username: 13807595111
+_password: aa199595
+_remember_me: on
+_target_path: http://www.sikiedu.com/my/courses/learning
+_csrf_token: cHuPitM3U44KqH3DNtsjlw2YORq6AhYHTKxUI30XKfM
+
+
