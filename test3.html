@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html> <!--<![endif]-->
+<html lang="zh_CN" class="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>学习中 - 我的课程 - 我的学习 - SiKi学院 - 生命不息，学习不止！
+</title>
+<meta name="keywords" content="
+unity,unity3d,siki,siki学院,u3d,unreal,虚幻,java,javaee"/>
+<meta name="description" content="siki老师的Unity3D专业视频学习平台，上千门实时更新课程，供学员在线观看，为国内开发者提供最新、最全、最快的视频学习教程"/>
+<meta name="format-detection" content=""/>
+<meta content="crb-ed8eX3sN3Pgiq9GWqNDs90aDxG1R38vBL8AvC_U" name="csrf-token"/>
+<meta content="1" name="is-login"/>
+<meta content="0" name="wechat_login_bind"/>
+<meta property="wb:webmaster" content="0a3931d053cb0488" />
+<link rel="icon" href="/files/system/2016/08-18/165519754d1f590889.ico?version=8.3.21" type="image/x-icon"/>
+<link rel="shortcut icon" href="/files/system/2016/08-18/165519754d1f590889.ico?version=8.3.21" type="image/x-icon" media="screen"/>
+<!--[if lt IE 9]>
+  <script src="/static-dist/libs/html5shiv.js?version=8.3.21"></script>
+  <script src="/static-dist/es5-shim/es5-shim.js?version=8.3.21"></script>
+  <script src="/static-dist/es5-shim/es5-sham.js?version=8.3.21"></script>
+  <![endif]-->
+<link href="/static-dist/app/css/bootstrap.css?version=8.3.21" rel="stylesheet" />
+<link href="/static-dist/app/css/main.css?version=8.3.21" rel="stylesheet" />
+<link href="/static-dist/app/css/main-v2.css?version=8.3.21" rel="stylesheet" />
+<link href="/static-dist/custombundle/css/main.css?version=8.3.21" rel="stylesheet" />
+</head>
+<body class="es-main-default es-nav-default my-course cd-design">
+<!--[if lt IE 9]>
+<script src="/static-dist/libs/fix-ie.js?version=8.3.21"></script>
+<style>
+  .lt-ie9 {
+    overflow: hidden;
+  }
+  .ie-mask {
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    background: #000;
+  }
+  .ie-alert-wrap {
+    position: absolute;
+    z-index: 1000000;
+    margin: -200px auto 0;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .ie-alert {
+    width: 514px;
+    height: 397px;
+    margin: 0 auto;
+  }
+  .ie-alert__chrome,
+  .ie-alert__firefox {
+    position: absolute;
+    z-index: 1000001;
+    display: block;
+    bottom: 48px;
+    width: 60px;
+    height: 80px;
+  }
+  .ie-alert__chrome {
+    left: 50%;
+    margin-left: -80px;
+  }
+  .ie-alert__firefox {
+    right: 50%;
+    margin-right: -80px;
+  }
+</style>
+<div class="ie-mask"></div>
+<div class="ie-alert-wrap">
+  <div class="ie-alert" style="background:url('/static-dist/app/img/browser/browser_update.png?version=8.3.21')">
+    <a href="http://www.baidu.com/s?wd=%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8" target="_blank" class="ie-alert__chrome"></a>
+    <a href="http://firefox.com.cn/download/" target="_blank" class="ie-alert__firefox"></a>
+  </div>
+</div>
+
+<![endif]-->
+<div class="es-wrap">
+<div class="alert cd-alert cd-alert-warning alert-notice hidden-xs" id="announcements-alert" role="alert">
+<div class="container swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<i class="es-icon es-icon-infooutline"></i>
+<a style="color:#ffa51f" class="alert-link" href="#modal" data-toggle="modal" data-url="/announcement/66/opreate/global/show">
+永久版本A计划限时出售!Unity - A计划永久版本和Unreal - A计划永久版本限时出售，出...
+</a>
+</div>
+</div>
+<button type="button" class="close" data-dismiss="alert" aria-label="Close" data-cookie="close_announcements_alert">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+<header class="es-header navbar">
+<div class="navbar-header">
+<div class="visible-xs  navbar-mobile">
+<a href="javascript:;" class="navbar-more js-navbar-more">
+<i class="es-icon es-icon-menu"></i>
+</a>
+<div class="html-mask"></div>
+<div class="nav-mobile">
+<form class="navbar-form" action="/search" method="get">
+<div class="form-group">
+<input class="form-control" placeholder="搜索" name="q">
+<button class="button es-icon es-icon-search"></button>
+</div>
+</form>
+<ul class="nav navbar-nav">
+<li class="">
+<a href="/">首页 </a>
+</li>
+<li class="">
+<a href="/course/explore?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">全部课程 </a>
+</li>
+<li class="nav-hover">
+<a href="/course/explore/unity?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">Unity <b class="caret"></b></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/course/explore/unity?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">Unity 全部课程</a></li>
+<li><a href="http://www.sikiedu.com/classroom/5/introduction">Unity A计划（永久）</a></li>
+<li><a href="http://www.sikiedu.com/classroom/7/introduction">Unity A计划（一年）</a></li>
+<li><a href="http://www.sikiedu.com/page/unitypath" target="_blank">Unity学习路线</a></li>
+</ul>
+</li>
+<li class="nav-hover">
+<a href="/course/explore/unrealengine?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">虚幻 <b class="caret"></b></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/course/explore/unrealengine?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">虚幻 全部课程</a></li>
+<li><a href="http://www.sikiedu.com/classroom/11/introduction">虚幻 A计划（永久）</a></li>
+<li><a href="http://www.sikiedu.com/classroom/9/introduction">虚幻 A计划（一年）</a></li>
+</ul>
+</li>
+<li class="nav-hover">
+<a href="http://www.sikiedu.com/course/explore/javaee?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">JavaEE <b class="caret"></b></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="http://www.sikiedu.com/course/explore/javaee?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">JavaEE 全部课程</a></li>
+<li><a href="http://www.sikiedu.com/classroom/12/introduction">JavaEE A计划（一年）</a></li>
+<li><a href="http://www.sikiedu.com/page/javapath" target="_blank">JavaEE学习路线</a></li>
+</ul>
+</li>
+<li class="">
+<a href="/page/aboutus">关于我们 </a>
+</li> </ul>
+</div>
+</div>
+<a href="/" class="navbar-brand">
+<img src="/files/../files/system/2016/08-18/1651164c8573062499.png">
+</a>
+</div> <nav class="collapse navbar-collapse">
+<ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+<li class="">
+<a href="/">首页 </a>
+</li>
+<li class="">
+<a href="/course/explore?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">全部课程 </a>
+</li>
+<li class="nav-hover">
+<a href="/course/explore/unity?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">Unity <b class="caret"></b></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/course/explore/unity?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">Unity 全部课程</a></li>
+<li><a href="http://www.sikiedu.com/classroom/5/introduction">Unity A计划（永久）</a></li>
+<li><a href="http://www.sikiedu.com/classroom/7/introduction">Unity A计划（一年）</a></li>
+<li><a href="http://www.sikiedu.com/page/unitypath" target="_blank">Unity学习路线</a></li>
+</ul>
+</li>
+<li class="nav-hover">
+<a href="/course/explore/unrealengine?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">虚幻 <b class="caret"></b></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/course/explore/unrealengine?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">虚幻 全部课程</a></li>
+<li><a href="http://www.sikiedu.com/classroom/11/introduction">虚幻 A计划（永久）</a></li>
+<li><a href="http://www.sikiedu.com/classroom/9/introduction">虚幻 A计划（一年）</a></li>
+</ul>
+</li>
+<li class="nav-hover">
+<a href="http://www.sikiedu.com/course/explore/javaee?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">JavaEE <b class="caret"></b></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="http://www.sikiedu.com/course/explore/javaee?filter%5Btype%5D=all&amp;filter%5Bprice%5D=all&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=studentNum">JavaEE 全部课程</a></li>
+<li><a href="http://www.sikiedu.com/classroom/12/introduction">JavaEE A计划（一年）</a></li>
+<li><a href="http://www.sikiedu.com/page/javapath" target="_blank">JavaEE学习路线</a></li>
+</ul>
+</li> <li class="nav-more nav-hover">
+<a class="more">
+<i class="es-icon es-icon-morehoriz"></i>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li class="">
+<a href="/page/aboutus">关于我们 </a>
+</li> </ul>
+</li>
+</ul>
+<div class="navbar-user  left ">
+<ul class="nav user-nav">
+<li class="user-manage-li visible-lg cd-ml24">
+<a class="btn cd-btn user-manage-toggle" href="/my/courses/learning">我的学习</a>
+</li>
+<li class="user-inform-li js-user-inform hidden-xs hidden-sm cd-ml24 cd-dropdown" data-toggle="cd-dropdown">
+<a class="inform-dropdown-toggle"><i class="cd-icon cd-icon-bell"></i></a>
+<div class="dropdown-menu inform-dropdown js-user-nav-dropdown" role="menu">
+<div class="clearfix inform-dropdown-head" role="tablist">
+<a class="inform-dropdown-head__tab js-inform-tab active" href="#notification" role="tab" data-toggle="tab" data-type="newNotification">通知</a>
+<a class="inform-dropdown-head__tab js-inform-tab" href="#message" role="tab" data-toggle="tab" data-type="conversation">私信</a>
+</div>
+<div class="tab-content">
+<div class="notification-content tab-pane active" role="tabpanel" id="notification">
+<div class="inform-dropdown-body js-inform-dropdown-body">
+<div class="inform-empty-status js-inform-empty">
+<img class="cd-mb24" src="/static-dist/app/img/notice/null-notice.png?version=8.3.21" srcset="/static-dist/app/img/notice/null-notice.png?version=8.3.21 1x, /static-dist/app/img/notice/null-notice@2x.png?version=8.3.21 2x"/>
+<div class="inform-empty-status__tip">暂无新的通知～</div>
+</div>
+</div>
+<div class="inform-dropdown-foot">
+<a class="cd-link-minor" href="/notification">查看全部通知</a>
+</div>
+</div>
+<div class="message-content tab-pane" role="tabpanel" id="message">
+<div class="inform-dropdown-body js-inform-dropdown-body">
+<div class="inform-empty-status js-inform-empty">
+<img class="cd-mb24" src="/static-dist/app/img/notice/null-message.png?version=8.3.21" srcset="/static-dist/app/img/notice/null-message.png?version=8.3.21 1x, /static-dist/app/img/notice/null-message@2x.png?version=8.3.21 2x"/>
+<div class="inform-empty-status__tip">暂无新的私信～</div>
+</div>
+</div>
+<div class="inform-dropdown-foot">
+<a class="cd-link-minor" href="/message/">查看全部私信</a>
+</div>
+</div>
+</div>
+</div>
+</li> <li class="user-avatar-li cd-dropdown cd-ml24" data-toggle="cd-dropdown">
+<a class="user-avatar-toggle" href="javascript:;">
+<img class="cd-avatar cd-avatar-xs" src="/files/user/2019/08-20/171748c41309481589.jpg">
+</a>
+<div class="dropdown-menu user-dropdown hidden-sm hidden-xs hidden-md js-user-nav-dropdown">
+<div class="user-dropdown-info cd-mb24">
+<a class="user-dropdown-info__avatar cd-mr24" href="/user/110132">
+<img class="cd-avatar" src="/files/user/2019/08-20/171748c3fcbb971828.jpg">
+</a>
+<div class="user-dropdown-profile">
+<div class="user-dropdown-profile__nickname">
+<span>黄俊豪</span>
+</div>
+</div>
+</div>
+<div class="user-dropdown__link cd-mb24">
+<a class="cd-link-minor" href="/my/orders"><i class="cd-icon cd-icon-payment"></i>账户中心</a>
+<a class="cd-link-minor" href="/settings"><i class="es-icon es-icon-setting"></i>个人设置</a>
+</div>
+<div class="user-dropdown__logout"><a class="cd-link-minor" href="/logout">退出登录</a></div>
+</div>
+<ul class="dropdown-menu hidden-lg" role="menu">
+<div class="dropdown-header"><a class="cd-link-minor" href="/user/110132">黄俊豪</a></div>
+<li><a href="/my/orders"><i class="es-icon es-icon-accountwallet"></i>账户中心</a></li>
+<li><a href="/settings"><i class="es-icon es-icon-setting"></i>个人设置</a></li>
+<li class="user-nav-li-my">
+<a href="/my/courses/learning">
+<i class="es-icon es-icon-book"></i>我的学习
+</a>
+</li>
+<li class="hidden-md"><a href="/notification"><span class="pull-right num"></span><i class="es-icon es-icon-notificationson"></i>通知</a></li>
+<li class="hidden-md"><a href="/message/"><span class="pull-right num"></span><i class="es-icon es-icon-mail"></i>私信</a></li>
+<li class="mobile-switch js-switch-mobile visible-xs"><a href="javascript:;">
+<i class="es-icon es-icon-qiehuan"></i>切换触屏版</a>
+</li>
+<li class="user-nav-li-logout"><a href="/logout"><i class="es-icon es-icon-power"></i>退出登录</a></li>
+</ul>
+</li>
+</ul>
+<form class="navbar-form navbar-right hidden-xs" action="/search" method="get">
+<div class="form-group">
+<input class="form-control js-search" value="" name="q" placeholder="搜索">
+<button class="button es-icon es-icon-search"></button>
+</div>
+</form>
+</div> </nav>
+</header>
+<div id="content-container" class="container">
+<div class="row row-3-9 my-layout">
+<div class="col-md-3">
+<div class="sidenav">
+<ul class="list-group">
+<li class="list-group-heading">我的学习</li>
+<li class="list-group-item  active ">
+<a href="/my/courses/learning">我的课程</a>
+</li>
+<li class="list-group-item ">
+<a href="/my/classrooms">
+我的班级
+</a>
+</li>
+<li class="list-group-item
+          ">
+<a href="/my/learning/live">我的直播</a>
+</li>
+<li class="list-group-item
+        ">
+<a href="/my/questions">我的问答</a>
+</li>
+<li class="list-group-item
+        ">
+<a href="/my/discussions">我的话题</a>
+</li>
+<li class="list-group-item
+        ">
+<a href="/my/notebooks">我的笔记</a>
+</li>
+<li class="list-group-item ">
+<a href="/my/homework/finished/list">我的作业</a>
+</li>
+<li class="list-group-item ">
+<a href="/my/testpaper/list">我的考试</a>
+</li>
+<li class="list-group-item
+        ">
+<a href="/my/group">我的小组</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-9">
+<div class="panel panel-default panel-col">
+<div class="panel-heading">
+我的课程
+<a class="btn cd-btn cd-btn-info cd-btn-sm pull-right" href="/my/courses/live/calendar">直播课表</a>
+</div>
+<div class="panel-body">
+<ul class="cd-tabs">
+<li class="active"><a href="/my/courses/learning">学习中</a></li>
+<li><a href="/my/courses/learned">已学完</a></li>
+<li><a href="/my/courses/favorite">收藏</a></li>
+</ul>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/58">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="Unity API常用方法和类详细讲解（基于Unity5.6）" class="my-course-item__picture" data-echo="/files/default/2017/06-03/202118ed8214568340.jpg" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/58">Unity API常用方法和类详细讲解（基于Unity5.6）</a>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 85%;"></div>
+</div>
+</div>
+<div class="progress-text">85%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/59">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/40">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="背包系统 装备系统和锻造系统 - 基于Unity5.3UGUI" class="my-course-item__picture" data-echo="/files/default/2017/06-18/130235b2d4a1641467.png" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/40">背包系统 装备系统和锻造系统 - 基于Unity5.3UGUI</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/40">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/39">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="UI框架 - 基于Unity5.3UGUI" class="my-course-item__picture" data-echo="/files/default/2017/06-17/125125dd279c125593.png" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/39">UI框架 - 基于Unity5.3UGUI</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/39">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/38">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="游戏编程框架 - 基于StrangeIoc和Unity5.3" class="my-course-item__picture" data-echo="/files/course/2016/09-16/110604c137d9068367.jpg" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/38">游戏编程框架 - 基于StrangeIoc和Unity5.3</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/38">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/45">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="编程内功修炼-算法（C#编程第五季）" class="my-course-item__picture" data-echo="/files/course/2016/11-22/113940c5be6f907283.png" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/45">编程内功修炼-算法（C#编程第五季）</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/45">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/49">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="MySQL数据库从零到精通" class="my-course-item__picture" data-echo="/files/default/2018/06-19/22181240a75e897946.jpg" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/49">MySQL数据库从零到精通</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/49">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/51">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="PhotonServer游戏服务器端教程" class="my-course-item__picture" data-echo="/files/course/2017/02-20/143230e6ebae155206.png" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/51">PhotonServer游戏服务器端教程</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/51">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/62">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="《丛林战争》直接利用Socket/TCP开发网络游戏 - C#（Unity5.6）" class="my-course-item__picture" data-echo="/files/default/2017/06-21/122414edd2b0309460.jpg" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/62">《丛林战争》直接利用Socket/TCP开发网络游戏 - C#（Unity5.6）</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/63">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/55">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="游戏开发中的设计模式（Unity 5.6）" class="my-course-item__picture" data-echo="/files/course/2017/04-27/172910665e67640617.png" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/55">游戏开发中的设计模式（Unity 5.6）</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/55">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/64">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="Unity游戏开发人工智能编程（Unity5.6）" class="my-course-item__picture" data-echo="/files/default/2017/06-21/123300c2f5d9191905.jpg" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/64">Unity游戏开发人工智能编程（Unity5.6）</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/65">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/53">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="Unity A计划直播视频" class="my-course-item__picture" data-echo="/files/course/2017/03-07/22542514728a718488.png" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/53">Unity A计划直播视频</a>
+</div>
+<div class="my-course-item__classroom">
+<span>来自班级：<a class="cd-link-minor" href="/classroom/5">Unity - A计划（永久有效期）</a></span>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 0%;"></div>
+</div>
+</div>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/53">继续学习</a>
+</div>
+</div>
+<div class="my-course-item cd-mb40 clearfix">
+<a class="my-course-item__link" href="/course_set/46">
+<img src="/assets/img/default/lazyload_course.png?version=8.3.21" alt="如何制作塔防游戏（基于Unity5.5）" class="my-course-item__picture" data-echo="/files/course/2017/02-20/14350157418c239374.png" />
+<span class="my-course-item__label">
+</span> </a>
+<div class="my-course-item__info">
+<div class="my-course-item__title text-overflow">
+<a class="cd-link-major" href="/course_set/46">如何制作塔防游戏（基于Unity5.5）</a>
+</div>
+<div class="my-course-item__progress cd-mt24 cd-clearfix">
+<span class="my-course-item__progress__text">学习进度</span>
+<div class="cd-progress cd-progress-sm">
+<div class="progress-bar">
+<div class="progress-outer">
+<div class="progress-inner" style="width: 32%;"></div>
+</div>
+</div>
+<div class="progress-text">32%</div>
+</div>
+</div>
+</div>
+<div class="my-course-item__btn">
+<a class="btn cd-btn cd-btn-primary cd-btn-lg" href="/my/course/46">继续学习</a>
+</div>
+</div> <nav class=" text-center">
+<ul class="pagination cd-pagination">
+<li class="active"><a href="/my/courses/learning?page=1">1</a></li>
+<li><a href="/my/courses/learning?page=2">2</a></li>
+<li><a href="/my/courses/learning?page=3">3</a></li>
+<li><a href="/my/courses/learning?page=4">4</a></li>
+<li><a href="/my/courses/learning?page=5">5</a></li>
+<li><a href="/my/courses/learning?page=2"><i class="cd-icon cd-icon-arrow-right"></i></a></li>
+<li><a href="/my/courses/learning?page=10"><i class="cd-icon cd-icon-last-page"></i></a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="es-footer-link">
+<div class="container">
+<div class="row">
+<div class="col-md-8 footer-main clearfix">
+<div class="link-item ">
+<h3>这</h3>
+<ul>
+<li>
+<a href="" target="_self">是</a>
+</li>
+</ul>
+</div>
+<div class="link-item ">
+<h3>一</h3>
+<ul>
+<li>
+<a href="" target="_self">个</a>
+</li>
+</ul>
+</div>
+<div class="link-item ">
+<h3>调</h3>
+<ul>
+<li>
+<a href="" target="_self">皮</a>
+</li>
+</ul>
+</div>
+<div class="link-item hidden-xs">
+<h3>的</h3>
+<ul>
+<li>
+<a href="" target="_self">网</a>
+</li>
+</ul>
+</div>
+<div class="link-item hidden-xs">
+<h3>站</h3>
+<ul>
+<li>
+<a href="" target="_self">^_^！！！</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 footer-logo hidden-sm hidden-xs">
+<a class="" href="http://www.sikiedu.com" target="_blank"><img src="/files/system/block_picture_1471511030.png?version=8.3.21" alt="siki学院"></a>
+<div class="footer-sns">
+<a href="http://weibo.com/ipengcheng" target="_blank"><i class="es-icon es-icon-weibo"></i></a>
+<a class="qrcode-popover top">
+<i class="es-icon es-icon-weixin"></i>
+<div class="qrcode-content">
+<img src="/files/system/block_picture_1557655653.jpg?version=8.3.21" alt="">
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="es-footer">
+<div class="copyright">
+<div class="container">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b741b98bcf0532f9add944e2593c8af";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101282250-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.qiqiuyun.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1345']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<a class="mlm" href="/archive/course">课程存档</a>
+<div class="mts">
+课程内容版权均归 <a href="/">
+SiKi学院
+</a> 所有
+<a class="mlm" href="http://www.miibeian.gov.cn/" target="_blank">
+京ICP备16046985号
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="es-bar hidden-xs">
+<div class="es-bar-menu">
+<ul class="bar-menu-top">
+<li data-id="#bar-user-center" class="bar-user">
+<a href="javascript:;" data-url="/esbar/my/study_center">学<br>习<br>中<br>心
+</a>
+</li>
+<li data-id="#bar-homework" data-toggle="tooltip" data-placement="left" title="我的考试/作业" data-trigger="hover" data-container=".es-bar">
+<a href="javascript:;" data-url="/esbar/my/practice/finished">
+<i class="es-icon es-icon-edit"></i>
+</a>
+</li> <li data-id="#bar-course-list" data-placement="left" data-toggle="tooltip" title="我的课程/班级" data-trigger="hover" data-container=".es-bar">
+<a data-url="/esbar/my/course" href="javascript:;">
+<i class="es-icon es-icon-book">
+</i>
+</a>
+</li> <li data-id="#bar-message" data-toggle="tooltip" data-placement="left" title="通知" data-trigger="hover" data-container=".es-bar">
+<a href="javascript:;" data-url="/esbar/my/notify">
+<i class="es-icon es-icon-notifications"></i>
+</a>
+</li>
+</ul>
+<ul class="bar-menu-sns">
+<li class="popover-btn bar-qq-btn" data-container=".bar-qq-btn" data-title="QQ客服及QQ群" data-content-element="#bar-qq-content">
+<a><i class="es-icon es-icon-qq"></i></a>
+</li>
+<li class="popover-btn bar-phone-btn" data-container=".bar-phone-btn" data-title="电话客服" data-content-element="#bar-phone-content">
+<a><i class="es-icon es-icon-phone"></i></a>
+</li>
+<li class="popover-btn bar-weixin-btn" data-container=".bar-weixin-btn" data-content-element="#bar-weixin-content">
+<a><i class="es-icon es-icon-weixin"></i></a>
+</li>
+<li class="go-top" style="margin:-10px auto 0 auto;" data-toggle="tooltip" data-placement="left" title="回到顶端" data-trigger="hover" data-container=".es-bar">
+<a href="javascript:;">
+<i class="es-icon es-icon-keyboardarrowup" style="margin-bottom:-8px"></i>
+<span class="text-sm">TOP</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="es-bar-main" id="bar-message">
+<div class="bar-main-header">
+<a href="javascript:;" class="js-bar-shrink link-dark"><i class="es-icon es-icon-arrowforward"></i></a>
+通知
+</div>
+<div class="bar-main-body">
+<ul class="bar-message">
+</ul>
+</div>
+</div>
+<div class="es-bar-main" id="bar-homework">
+<div class="bar-main-header">
+<a href="javascript:;" class="js-bar-shrink link-dark"><i class="es-icon es-icon-arrowforward"></i></a>
+我的考试/作业
+</div>
+<div class="bar-main-body">
+<div class="text-center">
+<div class="btn-group btn-action">
+<a href="javascript:;" data-url="/esbar/my/practice/finished" class="btn btn-primary " id="bar-practice-finish"><span>已批阅</span></a>
+<a href="javascript:;" data-url="/esbar/my/practice/reviewing" class="btn btn-primary active" id="bar-practice-review">已提交</a>
+</div>
+</div>
+<div class="bar-homework">
+</div>
+</div>
+</div>
+<div class="es-bar-main" id="bar-course-list">
+<div class="bar-main-header">
+<a href="javascript:;" class="js-bar-shrink link-dark"><i class="es-icon es-icon-arrowforward"></i></a>
+我的课程/班级
+</div>
+<div class="bar-main-body">
+<div class="text-center">
+<div class="btn-group btn-action">
+<a href="javascript:;" data-url="/esbar/my/course" class="btn btn-primary active" id="bar-course-btn">课程</a>
+<a href="javascript:;" data-url="/esbar/my/classroom" class="btn btn-primary " id="bar-classroom-btn">班级</a>
+</div>
+</div>
+<div id="bar-my-course">
+</div>
+</div>
+</div>
+<div class="es-bar-main" id="bar-user-center">
+</div>
+<div class="bar-popover-content" style="display:none;">
+<div id="bar-qq-content">
+<div class="row mtm">
+<div class="mbm text-overflow col-xs-6">
+<a class="link-dark" href="http://wpa.qq.com/msgrd?v=3&amp;uin=88137944&amp;site=qq&amp;menu=yes" target="_blank">
+<img class="mrs" src="/assets/v2/img/bar_qq.png?version=8.3.21" alt="" title="点击这里给我发消息" alt="">
+<span alt="" title="网站客服">网站客服</span>
+</a>
+</div>
+<div class="mbm text-overflow col-xs-6">
+<a class="link-dark" href="http://wpa.qq.com/msgrd?v=3&amp;uin=804632564&amp;site=qq&amp;menu=yes" target="_blank">
+<img class="mrs" src="/assets/v2/img/bar_qq.png?version=8.3.21" alt="" title="点击这里给我发消息" alt="">
+<span alt="" title="SiKi">SiKi</span>
+</a>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="mbm col-xs-6">
+<p class="text-overflow">
+<img class="mrs" src="/assets/v2/img/bar_qq_group.png?version=8.3.21" alt="">
+<span alt="" title="Unity3群">Unity3群</span>
+</p>
+<p class="text-overflow">
+<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=bac9e6ae9bef858b6b92b0e8e84e2ffe536e898d9042f30c9da20db6ae47dc7b" rel="noreferrer noopener"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="SiKi学院Unity交流3群" title="SiKi学院Unity交流3群" /></a>
+</p>
+</div>
+<div class="mbm col-xs-6">
+<p class="text-overflow">
+<img class="mrs" src="/assets/v2/img/bar_qq_group.png?version=8.3.21" alt="">
+<span alt="" title="Unreal5群">Unreal5群</span>
+</p>
+<p class="text-overflow">
+<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=8f85d769f662d354de2a63d855f640aa997470a7a078eb006d2d0175cfdda9b0" rel="noreferrer noopener"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="SiKi学院Unreal交流5群" title="SiKi学院Unreal交流5群" /></a>
+</p>
+</div>
+<div class="mbm col-xs-12">
+<p class="text-overflow">
+<img class="mrs" src="/assets/v2/img/bar_qq_group.png?version=8.3.21" alt="">
+<span alt="" title="JavaEE3群">JavaEE3群</span>
+</p>
+<p class="text-overflow">
+<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=ce7ac1bbfda5650c5a9bf36b27318514f81e750e56fe07aa41e471cf697c1177" rel="noreferrer noopener"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="SiKi学院JavaEE交流群3群" title="SiKi学院JavaEE交流群3群" /></a>
+</p>
+</div>
+</div>
+</div>
+<div id="bar-phone-content">
+<p class="mtm"><i class="es-icon es-icon-accesstime mrm"></i>工作时间：尽量在工作时间联系我哦！</p>
+<p class="mtm"><i class="es-icon es-icon-phone mrm"></i>通过QQ联系我哦:88137944</p>
+<p class="mtm"><i class="es-icon es-icon-mail mrm"></i>邮箱： <a class="link-dark" href="mailto:admin@sikiedu.com">admin@sikiedu.com</a></p>
+</div>
+<div id="bar-weixin-content">
+<img width="110" class="img-responsive" src="/files/system/2019/01-25/175846673523013941.jpg?time=1566229566?version=8.3.21" alt="">
+</div>
+</div>
+</div>
+<div id="login-modal" class="modal" data-url="/login/ajax"></div>
+<div id="modal" class="modal"></div>
+<div id="attachment-modal" class="modal"></div>
+<script>
+  if (typeof app === 'undefined') {
+      var app = {};
+  }
+  app.version = '8.3.21';
+  app.httpHost = 'http://www.sikiedu.com';
+  app.basePath = 'http://www.sikiedu.com';
+  app.theme = 'jianmo';
+
+    
+  var CLOUD_FILE_SERVER = ""; 
+
+  app.config = {"api":{"weibo":{"key":"180494154"},"qq":{"key":"101350871"},"douban":{"key":""},"renren":{"key":""}},"loading_img_path":"\/assets\/img\/default\/loading.gif?version=8.3.21"};
+
+  app.arguments = {};
+      
+  app.scripts = null;
+
+  app.fileSingleSizeLimit = 10;
+  app.uploadUrl = '/file/upload';
+  app.imgCropUrl = '/file/img/crop';
+  app.lessonCopyEnabled = '0';
+  app.cloudPlayerSdkUrl = '//service-cdn.qiqiuyun.net/js-sdk/sdk-v1.js?15771115';
+  app.cloudPlayServer = '';
+  app.cloudVideoPlayerSdkUrl = '//service-cdn.qiqiuyun.net/js-sdk/video-player/sdk-v1.js?15771115';
+  app.cloudOldUploaderSdkUrl = '//service-cdn.qiqiuyun.net/js-sdk/uploader/sdk-v1.js?15771115';
+  app.cloudOldDocumentSdkUrl = '//service-cdn.qiqiuyun.net/js-sdk/document-player/v7/viewer.html?15771115';
+  app.lang = 'zh_CN';
+</script>
+<script src="/bundles/translations/translator.min.js?version=8.3.21"></script>
+<script src="/bundles/translations/zh_CN.js?version=8.3.21"></script>
+<script src="/static-dist/libs/base.js?version=8.3.21"></script>
+<script src="/static-dist/app/js/common.js?version=8.3.21"></script>
+<script src="/static-dist/app/js/main.js?version=8.3.21"></script>
+<script src="/static-dist/jianmotheme/js/main.js?version=8.3.21"></script>
+<script src="/static-dist/app/js/default/header/index.js?version=8.3.21"></script>
+<script src="/static-dist/libs/perfect-scrollbar.js?version=8.3.21"></script>
+<script src="/static-dist/app/js/es-bar/index.js?version=8.3.21"></script>
+<script type="text/javascript">
+  window.seajsBoot && window.seajsBoot();
+</script>
+</body>
+</html>
